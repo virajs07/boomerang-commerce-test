@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/underscore-min.js"></script>
+		<script type="text/javascript" src="js/highcharts.js"></script>
+		<script type="text/javascript" src="js/exporting.js"></script>
+		<script type="text/javascript" src="js/boomerang.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/boomerang.css">
+	</head>
+	<title>
+		Boomerang Test UI
+	</title>
+	<body>
+	<div id="chart-ui" class="text-center">
+		<div class="dropDowns">
+			<select id="category" onchange="createStatus()">
+			<option disabled selected>Category</option>
+				<option value="Hardware">Hardware</option>
+				<option value="Software">Software</option>
+			</select>
+			<select id="status" onchange="createGraph()">
+			</select>
+		</div>
+		<div class="chart">
+			<div id="container" style=""></div>
+		</div>
+	</div>
+	<font color="RED"><label id="error"></label></font>
+	</body>
+</html>
